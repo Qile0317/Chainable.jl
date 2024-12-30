@@ -6,7 +6,7 @@ Exports the `@chainable` macro to make any Julia function pipeline-friendly. `@c
 
 ```julia
 using Pkg
-Pkg.add("Chainable")
+Pkg.add(PackageSpec(name="Chainable", url = "https://github.com/Qile0317/Chainable.jl.git"))
 ```
 
 ## Usage
