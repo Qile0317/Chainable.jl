@@ -35,7 +35,10 @@ end
 
 ## Roadmap
 
+- [ ] setup gh actions
 - [ ] Add support for broadcasting with `.`
+- [ ] docsite
+- [ ] register
 
 ## Contributing
 
