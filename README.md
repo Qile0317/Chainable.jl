@@ -1,7 +1,7 @@
 # Chainable.jl
 
-[![Build Status](https://github.com/Qile0317/Chainable.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/Qile0317/Chainable.jl/actions/workflows/CI.yml?query=branch%3Amaster)
-[![Codecov test coverage](https://codecov.io/gh/Qile0317/Chainable.jl/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Qile0317/Chainable.jl?branch=master)
+[![Build Status](https://github.com/Qile0317/Chainable.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Qile0317/Chainable.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Codecov test coverage](https://codecov.io/gh/Qile0317/Chainable.jl/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Qile0317/Chainable.jl?branch=main)
 [![Latest Release](https://img.shields.io/github/release/Qile0317/Chainable.jl.svg)](https://github.com/Qile0317/Chainable.jl/releases/latest)
 [![Documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://qile0317.github.io/Chainable.jl)
 [![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/Qile0317/Chainable.jl/LICENSE)
