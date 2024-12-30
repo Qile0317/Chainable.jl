@@ -1,5 +1,5 @@
 module Chainable
 
-greet() = print("Hello World!")
+include("chainable.jl")
 
 end # module Chainable
