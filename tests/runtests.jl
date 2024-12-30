@@ -2,6 +2,7 @@ using Chainable
 using Test
 
 @testset "Chainable.jl" begin
+
     @testset "Pipeline operations" begin
         @chainable function transform(x, factor, offset)
             return x * factor .+ offset
@@ -59,4 +60,5 @@ using Test
         p2 = Point(3, 4)
         @test (p1 |> add_points(p2)).x == 4
     end
+
 end

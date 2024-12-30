@@ -33,9 +33,14 @@ end
     transform(1, 1)        # add 1
 ```
 
+At the moment, only positional arguments are supported, *excluding* default arguments. Function return type annotation is also not supported.
+
 ## Roadmap
 
 - [ ] setup gh actions
+- [ ] Add support for function return type annotation
+- [ ] Add support for default arguments (especially when there is argument type ambiguity in cases such as `@chainable LeakyRelu(x, a = 0.01) = max.(x * a, x`)
+- [ ] Add support for named arguments
 - [ ] Add support for broadcasting with `.`
 - [ ] docsite
 - [ ] register
