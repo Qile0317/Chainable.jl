@@ -31,16 +31,23 @@ end
 [1, 2, 3] |> 
     transform(2, 0) |>     # multiply by 2
     transform(1, 1)        # add 1
+
+# if default positional args are used, a named version must be used for piping
+@chainable increment(x, inc = 1) = x + inc
+1 |> increment() # works
+1 |> increment(2) # this is undefined behaviour and will most likely fail
+1 |> increment(inc = 2) # works
 ```
 
 At the moment, only positional arguments are supported, *excluding* default arguments. Function return type annotation is also not supported.
 
 ## Roadmap
 
-- [ ] setup gh actions
+- [x] setup gh actions
 - [ ] Add support for function return type annotation
-- [ ] Add support for default arguments (especially when there is argument type ambiguity in cases such as `@chainable LeakyRelu(x, a = 0.01) = max.(x * a, x`)
+- [x] Add support for default arguments (especially when there is argument type ambiguity in cases such as `@chainable LeakyRelu(x, a = 0.01) = max.(x * a, x`)
 - [ ] Add support for named arguments
+- [ ] Add support for args and kwargs.
 - [ ] Add support for broadcasting with `.`
 - [ ] docsite
 - [ ] register

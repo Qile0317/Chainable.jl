@@ -61,4 +61,38 @@ using Test
         @test (p1 |> add_points(p2)).x == 4
     end
 
+    # TODO future feature
+    # @testset "Simple return type annotation" begin
+    #     @chainable function add_typed(x::Int, y::Int)::Int
+    #         return x + y
+    #     end
+
+    #     @test add_typed(1, 2) === 3
+    #     @test 1 |> add_typed(2) === 3
+    # end
+
+    @testset "Simple default arguments" begin
+        @chainable function add_default(x, y=1)
+            return x + y
+        end
+        
+        @test add_default(1) == 2
+        @test 1 |> add_default() == 2
+        @test 1 |> add_default(y=2) == 3
+
+        @chainable add_default2(x, y=1) = x + y
+        
+        @test add_default2(1) == 2
+        @test 1 |> add_default2() == 2
+        @test 1 |> add_default2(y=2) == 3
+    end
+
+    # TODO simple defaults with return type annotations
+
+    # TODO lots of defaults
+
+    # TODO named args
+
+    # TODO args and kwargs
+
 end
