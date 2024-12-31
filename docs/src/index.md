@@ -1,3 +1,5 @@
+# Chainable.jl
+
 ```@docs
 Chainable
 ```
